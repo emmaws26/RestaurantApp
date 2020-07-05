@@ -105,7 +105,8 @@
                 android:layout_marginTop="@dimen/_2sdp"
                 android:layout_marginBottom="@dimen/_2sdp"
                 android:textAlignment="center"
-                android:text="Drink!"/>
+                android:text="Snack & Drink"/>
+
 
         </LinearLayout>
 
