@@ -74,7 +74,7 @@ public class SashimiFragment extends Fragment {
         storage = getActivity().getSharedPreferences("storage",Context.MODE_PRIVATE);
             if (storage.getString("data-sashimi" , null) == null){
                 Log.d("dataaaaa","sashimi null");
-                sashimiModels.add(new SashimiModel("Maguro","Tuna","maguro",42000));
+                sashimiModels.add(new SashimiModel("Yummy","Tuna","maguro",42000));
                 sashimiModels.add(new SashimiModel("Mekajiki","Swordfish","sashimi2",55000));
                 sashimiModels.add(new SashimiModel("Toro","Tuna Belly","sashimi3",70000));
                 sashimiModels.add(new SashimiModel("Salmon Ikura ","Salom roe on sushi rice","sashimi7",68000));
