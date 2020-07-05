@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPrimary"
+    tools:context=".View.ListOrderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_btn_back"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_13sdp"
+        android:textSize="@dimen/_20ssp"
+        android:text=""
+        android:lines="2"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_above="@id/btnOrder"
+        android:id="@+id/recOrder"
+        android:layout_below="@id/textTitle"
+        android:layout_margin="@dimen/_10sdp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOrder"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_clicked"
+        android:text="Order"
+        android:textAllCaps="false"
+        android:layout_margin="@dimen/_5sdp"
+        android:textColor="@color/backgroundPrimary"
+        />
+
+</RelativeLayout>
